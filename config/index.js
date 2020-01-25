@@ -12,10 +12,10 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api': {
-        target: ' https://www.easy-mock.com/mock/5d47c2e6cc39e6446fe43320',
+        target: 'http://localhost:7001',
         changeOrigin: true,
         pathRewrite: { // /hero-service-0.0.1-SNAPSHOT
-          '^/api': '/api/backend' // '/hero-service-0.0.1-SNAPSHOT'
+          '^/api': '/api' // '/hero-service-0.0.1-SNAPSHOT'
         }
       }
     },
@@ -41,7 +41,7 @@ module.exports = {
      */
 
     // https://webpack.js.org/configuration/devtool/#development
-    devtool: 'cheap-module-eval-source-map',
+    devtool: '#cheap-module-eval-source-map',
 
     // If you have problems debugging vue-files in devtools,
     // set this to false - it *may* help

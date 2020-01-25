@@ -23,12 +23,12 @@ const webpackConfig = merge(baseWebpackConfig, {
   },
   devtool: config.build.productionSourceMap ? config.build.devtool : false,
   entry: {
-    'api-creator': './src/index.js'
+    'vue-execption-reporter': './src/index.js'
   },
   output: {
     path: path.join(__dirname, '../dist'),
     filename: 'index.js',
-    library: 'api-creator',
+    library: 'vue-execption-reporter',
     libraryTarget: 'umd',
     umdNamedDefine: true
   },

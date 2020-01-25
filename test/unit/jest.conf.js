@@ -2,6 +2,7 @@ const path = require('path')
 
 module.exports = {
   rootDir: path.resolve(__dirname, '../../'),
+  testEnvironment: 'node',
   moduleFileExtensions: [
     'js',
     'json',
@@ -12,16 +13,17 @@ module.exports = {
   },
   transform: {
     '^.+\\.js$': '<rootDir>/node_modules/babel-jest',
-    '.*\\.(vue)$': '<rootDir>/node_modules/vue-jest'
+    // '.*\\.(vue)$': '<rootDir>/node_modules/vue-jest'
   },
-  snapshotSerializers: ['<rootDir>/node_modules/jest-serializer-vue'],
-  setupFiles: ['<rootDir>/test/unit/setup'],
+  // snapshotSerializers: ['<rootDir>/node_modules/jest-serializer-vue'],
+  // setupFiles: ['<rootDir>/test/unit/setup'],
   // mapCoverage: true,
   coverageDirectory: '<rootDir>/test/unit/coverage',
   collectCoverageFrom: [
-    'src/**/*.{js,vue}',
+    'src/**/*.{js}',
     '!src/main.js',
     '!**/node_modules/**'
   ],
-  testURL: 'http://localhost'
+  // verbose: true,
+  // testURL: 'http://localhost'
 }
