@@ -16,10 +16,10 @@
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
-    "unit": "jest --config test/unit/jest.conf.js --coverage",
+    "unit": "jest --config test/unit/jest.conf.js --coverage --forceExit",
     "unit:dev": "jest --config test/unit/jest.conf.js --coverage --watchAll",
     "test": "npm run unit",
-    "coverage": "jest --config test/unit/jest.conf.js --coverage --coverageReporters=text-lcov | coveralls",
+    "coverage": "jest --config test/unit/jest.conf.js --coverage --forceExit --coverageReporters=text-lcov | coveralls",
     "test:dev": "npm run unit:dev",
     "test:debug": "node --inspect-brk ./node_modules/jest/bin/jest --runInBand --no-cache --no-watchman",
     "lint": "eslint --ext .js,.vue src test/unit",
