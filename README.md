@@ -2,6 +2,11 @@
 
 > An exception reporting libarary
 
+![Build Status](https://travis-ci.org/msidolphin/vue-execption-reporter.svg?branch=master)
+![Node CI](https://github.com/msidolphin/vue-execption-reporter/workflows/Node%20CI/badge.svg)
+[![Coverage Status](https://coveralls.io/repos/github/msidolphin/vue-execption-reporter/badge.svg?branch=master)](https://coveralls.io/github/msidolphin/vue-execption-reporter?branch=master)
+[![codebeat badge](https://codebeat.co/badges/9bb698c9-22d9-467b-be7e-882b71586df3)](https://codebeat.co/projects/github-com-msidolphin-vue-execption-reporter-master)
+
 # 使用方式
 ```js
 import Vue from 'vue'
