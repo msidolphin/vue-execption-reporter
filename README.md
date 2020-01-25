@@ -54,7 +54,7 @@ new Vue({
 ## 基础结构
 
 | 参数名称   | 说明   | 类型   | 
-|:----|:----|:----|:----|
+| :---- |:---- |:---- |
 | id   | 上报数据唯一标识   | String   | 
 | uid   | 浏览器用户唯一标识   | String   | 
 | type   | 异常类型（由配置项中typeDefined定义）| String   | 
@@ -80,18 +80,18 @@ new Vue({
 
 ### js脚本执行错误异常
 
-| 参数名称   | 说明   | 类型   | 
-|:----|:----|:----|:----|
-| type   | 错误类型   | String   | 
-| element   | 触发元素   | String   | 
-| elementInnerText   | 触发元素文本 | String   | 
-| elementClassName | 触发元素类名| String  | 
+| 参数名称   | 说明   | 类型  |
+|:---- |:---- |:---- |
+| type   | 错误类型   | String | 
+| element   | 触发元素   | String| 
+| elementInnerText   | 触发元素文本 | String| 
+| elementClassName | 触发元素类名| String| 
 
 
 ### ajax请求异常
 
 | 参数名称   | 说明   | 类型   | 
-|:----|:----|:----|:----|
+|:----|:----|:----|
 | status   | 状态码   | Number   | 
 | requestUrl   | 请求地址   | String   | 
 | requestMethod   | 请求方式 | String   | 
@@ -100,7 +100,7 @@ new Vue({
 ### 资源加载失败异常
 
 | 参数名称   | 说明   | 类型   | 
-|:----|:----|:----|:----|
+|:----|:----|:----|
 | type   | 资源类型   | Number   | 
 | src    | 资源地址   | String   | 
 | html   | html标签 | String   | 
@@ -109,7 +109,7 @@ new Vue({
 ### 未处理reject异常
 
 | 参数名称   | 说明   | 类型   | 
-|:----|:----|:----|:----|
+|:----|:----|:----|
 | reason   | reject原因 （如果reason为异常类型则会忽略）  | -   | 
 
 
